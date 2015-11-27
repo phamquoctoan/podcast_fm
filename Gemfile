@@ -16,11 +16,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
 	gem 'byebug'
 	gem 'web-console', '~> 2.2.1'
-	gem 'spring'
+	gem 'spring', '~> 1.4.4'
 end
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.3.11'
+  gem 'sqlite3'
 end
 
 group :production do
