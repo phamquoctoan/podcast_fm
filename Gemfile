@@ -19,12 +19,12 @@ group :development, :test do
 	gem 'spring'
 end
 
-group :development do
-  gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3', '~> 1.3.11'
 end
 
 group :production do
-	gem 'pg'
+	gem 'pg', '~> 0.18.4'
 	gem 'rails_12factor'
 end
 
