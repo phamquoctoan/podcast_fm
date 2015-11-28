@@ -22,16 +22,16 @@
         <% @episodes.each do |episode| %>
           <li class="cf">
             <div class="episode_thumbnail">
-              <a href="episode.html">
-                <img src="images/pieter_levels.jpg" alt="Pieter Levels">
+              <a href="#">
+                <%= image_tag episode.episode_thumbnail.url(:medium) %>
               </a>
             </div>
             <div class="episode_overview">
               <h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
               <p class="description"><%= truncate(episode.description, lenght: 160) %></p>
               <div class="authorized_links">
-              <%= link_to "Edit", edit_podcast_episode_path(@podcast, episode) %>
-              <%= link_to "Delete", podcast_episode_path(@podcast, episode), method: :delete, data: {confirm: "Are your sure?"} %>
+                <%= link_to "Edit", edit_podcast_episode_path(@podcast, episode) %>
+                <%= link_to "Delete", podcast_episode_path(@podcast, episode), method: :delete, data: {confirm: "Are you sure?"} %>
               </div>
             </div>
           </li>
