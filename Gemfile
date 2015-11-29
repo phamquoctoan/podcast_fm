@@ -13,19 +13,22 @@ gem 'jbuilder', '~> 2.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5.2'
+gem 'coffee-script-source', '1.8.0'
+gem 'paperclip', '~> 4.3.2'
 
 group :development, :test do
-	gem 'byebug'
-	gem 'web-console', '~> 2.2.1'
-	gem 'spring', '~> 1.4.4'
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
 end
 
-group :development, :test do
-  gem 'sqlite3'
+group :development do
+	gem 'sqlite3'
 end
 
-group :production do
-	gem 'pg', '~> 0.18.4'
+group :production do 
+	gem 'pg'
 	gem 'rails_12factor'
 end
+
 
