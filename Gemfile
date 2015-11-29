@@ -15,7 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5.2'
 gem 'coffee-script-source', '1.8.0'
 gem 'paperclip', '~> 4.3.2'
-gem 'aws-sdk', '~> 2.2.3'
+gem 'aws-sdk', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'
