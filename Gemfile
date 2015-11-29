@@ -16,6 +16,7 @@ gem 'devise', '~> 3.5.2'
 gem 'coffee-script-source', '1.8.0'
 gem 'paperclip', '~> 4.3.2'
 gem 'aws-sdk', '~> 2.0'
+gem 'will_paginate', '~> 3.0.7'
 
 group :development, :test do
   gem 'byebug'
